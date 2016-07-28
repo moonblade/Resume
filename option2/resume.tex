@@ -1,0 +1,119 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+\newcommand{\bul}{\textbullet}
+%-----------------------------------------------------------
+
+
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+
+\begin{center}
+\textbf{\Large{Mohammed Nisham K}} \\
+mnishamk1995@gmail.com \textbullet\, +91 9497267385 \textbullet\, \url{https://in.linkedin.com/in/mnishamk}\\
+Sarayi, Near Indian Express, West Hill, Kozhikkode \\
+\end{center}
+
+\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
+\\ \\
+%\begin{table}[ht!]
+%\begin{center}
+\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l }
+% \hline
+\textbf{Examination} & \textbf{University} & \textbf{Institute} & \textbf{Year} & \textbf{GPA/\%} \\
+% \hline
+Class X & CBSE & Kendriya Vidyalaya, Kozhikkode & 2011 & 9.5 \\
+Class XII & CBSE & Kendriya Vidyalaya, Kozhikkode & 2013 & 93\% \\
+% UnderGraduate Specialization: & \textit{Computer Engineering} \\
+B.Tech Computer Science & Kerala University & College of Engineering Trivandrum & 2017 & 8.74 (Till S4)\\
+and Engineering\\
+% \hline
+\end{tabular}
+%\end{center}
+%\end{table}
+\\ \\
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\begin{itemize}
+\item \noindent Wireless Network and Network Security, Another one, a third one
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\begin{itemize}
+\item \noindent \textbf{Languages} (C, C++, Java),\textbf{Database} (MySQL) \textbf{Script} (Python, Shell, Perl, R), \textbf{Tools} (Eclipse, \LaTeX, Gnuplot, Rstudio).
+\end{itemize}
+
+\resheading{\textbf{MAJOR PROJECTS AND SEMINAR} }\\[\lsep]
+\begin{itemize}
+\item \textbf{Media Access Control Controling
+} (Research Project) \\
+ \emph{(Guide:Prof. Hubert F.
+, May'13 - till date)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Objective :Performance analysis of HTTP web browsing traffic.
+.
+	\item Performance analysis will help in comparing different MAC protocols based on different network sce-
+narios.
+
+	\item Studied various papers related to different MAC protocols and now working on improving simulations.
+
+	\end{itemize}
+
+\item \textbf{Second Item.
+} (M. Tech. Seminar) \\
+ \emph{(Guide: Prof. John Doe
+, Jan'14 - Aug'14)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item First subitem.
+	\item Second subitem.
+	\end{itemize}
+\end{itemize}
+
+\resheading{\textbf{STRENGTHS} }\\[\lsep]
+\begin{itemize}
+\item \noindent Positive Attitude, Social Interaction, Hardworking.
+\end{itemize}
+
+\resheading{\textbf{INTEREST AND HOBBIES} }\\[\lsep]
+\begin{itemize}
+\item \noindent Solving Puzzles.
+\item \noindent Playing Chess.
+
+\end{itemize}
+
+\end{document}
+
