@@ -5,6 +5,12 @@
 \usepackage{url}
 \usepackage{palatino}
 \usepackage{tabularx}
+\usepackage[english,num]{isodate}
+\usepackage{lipsum}
+
+% \isodate
+\isodash{-}
+
 \fontfamily{SansSerif}
 \selectfont
 
@@ -30,12 +36,19 @@
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{\uppercase{#1} \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[3]{
 \begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
 	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
 \end{tabular*}\vspace{-8pt}}
-\newcommand{\bul}{\textbullet}
+\newcommand{\when}[1]{\hfill \textbf{#1}} 
+
+\newenvironment{noSepItemize}
+{ \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}                  }
 %-----------------------------------------------------------
 
 
@@ -44,7 +57,7 @@
 
 \begin{center}
 \textbf{\Large{Mohammed Nisham K}} \\
-mnishamk1995@gmail.com \textbullet\, +91 9497267385 \textbullet\, \url{https://in.linkedin.com/in/mnishamk}\\
+mnishamk1995@gmail.com \textbullet\, +91 9497267385 \textbullet\, \href{https://in.linkedin.com/in/mnishamk}{https://in.linkedin.com/in/mnishamk}\\
 Sarayi, Near Indian Express, West Hill, Kozhikkode \\
 \end{center}
 
@@ -60,60 +73,64 @@ Class X & CBSE & Kendriya Vidyalaya, Kozhikkode & 2011 & 9.5 \\
 Class XII & CBSE & Kendriya Vidyalaya, Kozhikkode & 2013 & 93\% \\
 % UnderGraduate Specialization: & \textit{Computer Engineering} \\
 B.Tech Computer Science & Kerala University & College of Engineering Trivandrum & 2017 & 8.74 (Till S4)\\
-and Engineering\\
+% and Engineering\\
 % \hline
 \end{tabular}
 %\end{center}
 %\end{table}
 \\ \\
 
-\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\resheading{\textbf{Experience} }\\[\lsep]
 \begin{itemize}
-\item \noindent Wireless Network and Network Security, Another one, a third one
+\item \noindent \textbf{Developer Internship, Sensomate Systems} \when{2015}\\
+	\indent Development and debugging team. Projects include \textbf{BLE based navigation system} for android, an \textbf{ionic webapp}, other \textbf{Angular JS} frontend works
+\item \noindent \textbf{Freelance Developer, freelancer.com} \when{2015 - 16}\\
+	\indent \textbf{Elastic search} based search engine for legal documents, Angular JS Tax Calculator, other Android and Angular works
 \end{itemize}
 
 \resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
 \begin{itemize}
-\item \noindent \textbf{Languages} (C, C++, Java),\textbf{Database} (MySQL) \textbf{Script} (Python, Shell, Perl, R), \textbf{Tools} (Eclipse, \LaTeX, Gnuplot, Rstudio).
+\item \noindent \textbf{Languages} (C, C++, Java),\, \textbf{Database} (MySQL, Mongo),\, \textbf{Script} (Python, Shell),\, \textbf{Web} (HTML, Javascript, PHP, AngularJS, MEAN stack),\, \textbf{Tools} (Android Studio, Netbeans, Unity, \LaTeX).
 \end{itemize}
 
-\resheading{\textbf{MAJOR PROJECTS AND SEMINAR} }\\[\lsep]
-\begin{itemize}
-\item \textbf{Media Access Control Controling
-} (Research Project) \\
- \emph{(Guide:Prof. Hubert F.
-, May'13 - till date)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Objective :Performance analysis of HTTP web browsing traffic.
-.
-	\item Performance analysis will help in comparing different MAC protocols based on different network sce-
-narios.
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+% \begin{itemize}
+\begin{noSepItemize}
+\item \textbf{Elastic Search Legal Database} \when{2016-Present}\\
+	A search engine in for a unified database of legal cases in India, with Elastic Search and Angular JS front End.
+\item \textbf{BLE Navigation System} \when{2015-Present}\\
+	An android app for indoor navigation using Bluetooth low energy Beacons. Phase 1 Complete. To be deployed in KIMS hospital.
+\item \textbf{IEEE Link App} \when{2015}\\
+	An app to serve as a unified publicity platform for IEEE LINK(Local Integrated Network of Kerala IEEE Students). Phase 1 was revealed at Kerala IEEE Technical Symposium (KITeS) '15.
+\item \textbf{Eye Pencil} \when{2015}\\
+	An Eye tracker built into a spectacle frame coupled with a keyboard on screen. Enabling 
+paraplegic or TBI patient to type his intentions on the screen. Won best Innovation award at cetex expo.
+\item \textbf{Rom Porter Tool} \when{2012}\\
+	A windows batch tool to port android roms with minimum user input, 10K+ downloads.
+% \end{itemize}
+\end{noSepItemize}
 
-	\item Studied various papers related to different MAC protocols and now working on improving simulations.
+\resheading{\textbf{Achievements} }\\[\lsep]
+\begin{noSepItemize}
+	\item \noindent Completed Stanford university \textbf{\href{https://www.coursera.org/account/accomplishments/records/EJQWCKEBUSBD}{Machine Learning course}} from Coursera\when{2016}
+	\item \noindent First Place, \textbf{Game design} workshop, IEEE KiTeS \when{2015}
+	\item \noindent First Place, Firefox Appday, application development competition, Barton Hill, Trivandrum \when{2015}
+	\item \noindent Third Place, Cloud computing workshop, NSS Palakkad \when{2014}
+\end{noSepItemize}
 
-	\end{itemize}
+\resheading{\textbf{Volunteering Experience} }\\[\lsep]
+\begin{noSepItemize}
+	\item \noindent Conducted Robotics Project Expo at Pankajakasthuri College\when{2014}
+	\item \noindent Head of Android Student Club, CET \when{2015}
+	\item \noindent Conducted various Android related workshops, competitions for juniors\when{2014 - 15}
+	\item \noindent Development mentor at Ignite women's hackathon \when{2015}
+\end{noSepItemize}
 
-\item \textbf{Second Item.
-} (M. Tech. Seminar) \\
- \emph{(Guide: Prof. John Doe
-, Jan'14 - Aug'14)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item First subitem.
-	\item Second subitem.
-	\end{itemize}
-\end{itemize}
-
-\resheading{\textbf{STRENGTHS} }\\[\lsep]
-\begin{itemize}
-\item \noindent Positive Attitude, Social Interaction, Hardworking.
-\end{itemize}
-
-\resheading{\textbf{INTEREST AND HOBBIES} }\\[\lsep]
-\begin{itemize}
-\item \noindent Solving Puzzles.
-\item \noindent Playing Chess.
-
-\end{itemize}
+\resheading{\textbf{Professional Membership} }\\[\lsep]
+\begin{noSepItemize}
+	\item \noindent \textbf{IEEE} \when{2014-Present}
+	\item \noindent \textbf{IEEE Computer Society} \when{2014-Present}
+\end{noSepItemize}
 
 \end{document}
 
