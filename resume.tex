@@ -42,12 +42,28 @@
 \section{Skills}
 \subsection{Programming}
 \location{Proficient:}
-JavaScript \textbullet{} Angular \textbullet{} React \\
-Express \textbullet{}  Mongo \textbullet{} Python \\
-Java \textbullet{} Shell \textbullet{} Typescript \\ 
+Kubernetes \textbullet{} 
+Helm \textbullet{} 
+Argo CD \textbullet{} 
+Kustomize \textbullet{} 
+Terraform \textbullet{} 
+JavaScript \textbullet{} 
+Angular \textbullet{} 
+React \textbullet{}
+Express \textbullet{}  
+Mongo \textbullet{} 
+Python \textbullet{}
+Java \textbullet{} 
+Shell \textbullet{} 
+% Typescript \textbullet{}
+
 \location{Familiar :}
-Android \textbullet{} SQL \textbullet{} Elasticsearch \\
-PHP \textbullet{} \LaTeX \textbullet{} C++\\
+Android \textbullet{} 
+SQL \textbullet{} 
+Elasticsearch \textbullet{}
+PHP \textbullet{}
+\LaTeX \textbullet{} 
+C++ \textbullet{}
 \sectionsep
 
 % \subsection{Soft skills}
@@ -61,6 +77,7 @@ PHP \textbullet{} \LaTeX \textbullet{} C++\\
 
 \section{Achievements} 
 \vspace{\topsep}
+\textbullet{} Certified Kubernetes Administrator - LF-l6mags4tc3 \\
 \textbullet{} Completed Stanford university \href{https://www.coursera.org/account/accomplishments/records/EJQWCKEBUSBD}{Machine Learning course} from Coursera \\
 % \textbullet{} First Place, Game design workshop, IEEE KiTeS - 2015 \\
 % \textbullet{} First Place, Firefox Appday, application development competition, Barton Hill, Trivandrum - 2015 \\
@@ -103,7 +120,8 @@ PHP \textbullet{} \LaTeX \textbullet{} C++\\
 % \runsubsection{Dersalvador}
 \descript{| Devops Engineer}
 % \location{June 2020 - Present | Remote}
-Kubernetes, Docker, Gitlab CI/CD, Helm, EKS
+\location{ }
+Kubernetes, Argo CD, Docker, Gitlab CI/CD, Helm, EKS
 \vspace{\topsep}
 
 \textbf{BROKERME}:
@@ -112,10 +130,11 @@ Kubernetes, Docker, Gitlab CI/CD, Helm, EKS
 \begin{tightemize}
 \item Development and devops work, A freelancer portal where registered users may apply for relevant job offers from participating agencies.
 \item App is composed of multiple microservices, each on a seperate k8s pod. Setup includes helm chart for different environments. Deployed on two GCP clusters.
+\item Setup self managed Argo CD server, synced with git repository for maintaining a sub application.
 \item Deployment of microservices into multiple environments integrated into gitlab CI/CD
 \item Optimized gitlab pipeline to run microservice build and test stages in parallel
-\item Added Ingress routes for newer microservices
-\item Built selenium UI testsuite from scratch running on Browserstack
+% \item Added Ingress routes for newer microservices
+% \item Built selenium UI testsuite from scratch running on Browserstack
 \end{tightemize}
 
 \vspace{\topsep}
@@ -124,18 +143,20 @@ Kubernetes, Docker, Gitlab CI/CD, Helm, EKS
 \begin{tightemize}
 \item Created scripts to setup an amazon EKS cluster from scratch and give permission to the cluster to required IAM entities.
 \item Created scripts to Deploy docker containers to pods within the cluster in a user namespace via Helm charts
-\item Setup Ingress for access to the deployed app 
-\item Integrated deploy stage into gitlab CI/CD
+% \item Setup Ingress for access to the deployed app 
+\item Integrated deployment stage into existing gitlab CI/CD pipeline
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Commvault}
-\descript{| Senior Engineer }
+\descript{| Senior Engineer II }
 \location{Jul 2017 - Present | Bengaluru}
-Angular, Java, Python, React
+Kubernetes, Angular, Java, Python, React
 \vspace{\topsep}
+\location{Jul 2017 - Present | Bengaluru}
 \begin{tightemize}
-\item Lead developer for global admin console, enabling users to aggregate and maintain data from multiple CommCells (servers) without switching overhead. 
+\item For initial phase of containerizing existing services, set up kubernetes environment and deployed webserver microservice on it  
+\item Lead developer for global admin console, enabling users to aggregate and maintain data from multiple CommServers without switching overhead. 
 \item Redesigned backup view component as a calendar UI increasing customer interaction with the element.
 \item Involved in the initial phase for shift of frontend UI codebase from angularJS to react.
 % \item Design and implementation of subsystems from Java GUI into command center enhancing ease of use.
@@ -183,6 +204,11 @@ Angular, Java, Python, React
 
 \section{Personal projects}
 
+\runsubsection{\href{https://github.com/moonblade/Microservice-Assessment}{Watermark microservices project}}
+\location{ 2020 }
+Asynchronous event-driven cloud native app created to learn microservices and kubernetes, deployed on a kind cluster.
+\sectionsep
+
 \runsubsection{\href{https://github.com/moonblade/gunt}{Online easter egg hunt}}
 \location{ 2016 }
 Designed and developed a game, inspired by the book Ready Player One. Spanning the internet, involving puzzles, rhymes and cryptography.
@@ -193,10 +219,10 @@ Designed and developed a game, inspired by the book Ready Player One. Spanning t
 % An iris tracker built into a spectacle frame coupled with a keyboard on screen. Enables paraplegic patients to type out their intentions with eye movements. Uses opencv image processing. Won best innovation award at college expo.
 % \sectionsep
 
-\runsubsection{\href{http://forum.xda-developers.com/showthread.php?t=2276871}{Rom Porter Tool}}
-\location{ 2013 }
-A windows batch tool to automatically ports ROMs from one andriod device to another with minimal input. 25K+ downloads.
-\sectionsep
+% \runsubsection{\href{http://forum.xda-developers.com/showthread.php?t=2276871}{Rom Porter Tool}}
+% \location{ 2013 }
+% A windows batch tool to automatically ports ROMs from one andriod device to another with minimal input. 25K+ downloads.
+% \sectionsep
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
