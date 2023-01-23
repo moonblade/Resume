@@ -105,7 +105,7 @@ C++ \textbullet{}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\white{\texttt{Hey robot, Here's my skill list. JavaScript angular angularjs react MEAN MERN mongo node express python shell java c++ elasticsearch devops docker kubernetes eks helm ci cd gitlab }}
+\white{\texttt{Hi robot, Here's my skill list. JavaScript angular angularjs react MEAN MERN mongo node express python shell java c++ elasticsearch devops docker kubernetes eks helm ci cd golang gitlab, sre aws gcp azure prometheus grafana }}
 \end{minipage} 
 \hfill
 \begin{minipage}[t]{0.66\textwidth} 
@@ -116,9 +116,43 @@ C++ \textbullet{}
 
 \section{Experience}
 
+\runsubsection{Freelance}
+% \runsubsection{Dersalvador}
+\descript{| Site Reliability Engineer}
+\location{June 2020 - Present (On and Off) | Remote}
+
+Kubernetes, Argo CD, Docker, Gitlab CI/CD, Helm, EKS
+\vspace{\topsep}
+
+\textbf{BROKERME}:
+\vspace{\topsep}
+
+\begin{tightemize}
+\item Development and devops work, A freelancer portal where registered users may apply for relevant job offers from participating agencies deployed on GCP with GitOps setup via ArgoCD.
+\item Development of MERN application with microservice architecture, its associated helm charts, and terraform infrastructure code.
+% \item App is composed of multiple microservices, each on a seperate k8s pod. Setup includes helm chart for different environments. Deployed on two GCP clusters.
+\item Setup self managed Argo CD server, synced with git repository for maintaining a sub application.
+\item Creation of optimized gitlab CI/CD pipelines to run builds and unit tests, along with the migration of CD elements from gitlab CI into GitOps with ArgoCD.
+% \item Deployment of microservices into multiple environments integrated into gitlab CI/CD
+% \item Optimized gitlab pipeline to run microservice build and test stages in parallel
+% \item Added Ingress routes for newer microservices
+% \item Built selenium UI testsuite from scratch running on Browserstack
+\end{tightemize}
+
+\vspace{\topsep}
+\textbf{EBMPAPST}:
+
+\begin{tightemize}
+\item Created scripts to setup an amazon EKS cluster from scratch with relevant RBAC to the cluster for required IAM entities.
+\item Provided Makefiles to Deploy docker containers to pods within the cluster in a user namespace via Helm charts, making repeated tasks easier.
+\item Setup Nginx Ingress for access to the deployed app 
+\item Integrated deployment stage into existing gitlab CI/CD pipeline.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Freiheit.com technologies}
 \descript{| Site Reliability Engineer}
-\location{May 2022 - Present | Hamburg, Germany}
+\location{May 2022 - October 2022 | Hamburg, Germany}
 
 Kubernetes, ArgoCD, Kuberpult, Github actions, Golang, Helm, GCP
 \vspace{\topsep}
@@ -129,37 +163,6 @@ Kubernetes, ArgoCD, Kuberpult, Github actions, Golang, Helm, GCP
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Freelance}
-% \runsubsection{Dersalvador}
-\descript{| Devops Engineer}
-\location{June 2020 - December 2021 | Remote}
-
-Kubernetes, Argo CD, Docker, Gitlab CI/CD, Helm, EKS
-\vspace{\topsep}
-
-% \textbf{BROKERME}:
-% \vspace{\topsep}
-
-\begin{tightemize}
-\item Development and devops work, A freelancer portal where registered users may apply for relevant job offers from participating agencies.
-\item App is composed of multiple microservices, each on a seperate k8s pod. Setup includes helm chart for different environments. Deployed on two GCP clusters.
-\item Setup self managed Argo CD server, synced with git repository for maintaining a sub application.
-\item Deployment of microservices into multiple environments integrated into gitlab CI/CD
-\item Optimized gitlab pipeline to run microservice build and test stages in parallel
-% \item Added Ingress routes for newer microservices
-% \item Built selenium UI testsuite from scratch running on Browserstack
-\end{tightemize}
-
-% \vspace{\topsep}
-% \textbf{EBMPAPST}:
-
-% \begin{tightemize}
-% \item Created scripts to setup an amazon EKS cluster from scratch and give permission to the cluster to required IAM entities.
-% \item Provided scripts to Deploy docker containers to pods within the cluster in a user namespace via Helm charts
-% % \item Setup Ingress for access to the deployed app 
-% \item Integrated deployment stage into existing gitlab CI/CD pipeline
-% \end{tightemize}
-\sectionsep
 
 \runsubsection{Commvault}
 \descript{| Senior Engineer II }
@@ -168,8 +171,8 @@ Kubernetes, Angular, Java, Python, React
 \vspace{\topsep}
 \begin{tightemize}
 \item Initial phase of containerizing existing services, setup kubernetes environment and deployed webserver microservice on it
-\item Setup ArgoCD environment for GitOps delivery of microservices, along with loki and prometheus for logging
-\item Setup Tekton pipelines for updating GitOps repositories based on webhook trigger
+\item Setup ArgoCD environment for GitOps delivery of microservices, along with loki and prometheus for logging and Tekton pipelines with webhook triggers
+% \item Setup Tekton pipelines for updating GitOps repositories based on webhook trigger
 \item Lead developer for global admin console, enabling users to aggregate and maintain data from multiple CommServers without switching overhead. 
 % \item Redesigned backup view component as a calendar UI increasing customer interaction with the element.
 % \item Involved in the initial phase for shift of frontend UI codebase from angularJS to react.
@@ -180,7 +183,7 @@ Kubernetes, Angular, Java, Python, React
 % \item Design of frontend UI with proper REST calls for functionality.
 % \item Added toggling of custom alerts based on customer requirement.
 \item Automated install and update of commvault software on remote machine with python scripts decreasing turnaround time.
-\item Developed python scripts for automated sandbox creation and form building increasing throughput. 
+% \item Developed python scripts for automated sandbox creation and form building increasing throughput. 
 \item Implemented auto tracking of work items via Trello API for easier overview.
 % \item Automated logging and mailing of work processes completed over the week for easier accessibility.
 \end{tightemize}    
@@ -223,10 +226,10 @@ Kubernetes, Angular, Java, Python, React
 Asynchronous event-driven cloud native app created to learn microservices and kubernetes, deployed on a kind cluster.
 \sectionsep
 
-\runsubsection{\href{https://github.com/moonblade/gunt}{Online easter egg hunt}}
-\location{ 2016 }
-Designed and developed a game, inspired by the book Ready Player One. Spanning the internet, involving puzzles, rhymes and cryptography.
-\sectionsep
+% \runsubsection{\href{https://github.com/moonblade/gunt}{Online easter egg hunt}}
+% \location{ 2016 }
+% Designed and developed a game, inspired by the book Ready Player One. Spanning the internet, involving puzzles, rhymes and cryptography.
+% \sectionsep
 
 % \runsubsection{Eye Pencil}
 % \location{ 2015 }
